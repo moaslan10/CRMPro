@@ -1,0 +1,10 @@
+FINAL FIX:
+The previous 500 error was caused by SQLite/EF Core decimal aggregate translation in Dashboard and Reports.
+Dashboard and Reports now load the CRM rows first and calculate decimal totals in C#, avoiding the SQLite aggregate problem.
+
+Run only START-BACKEND.bat from this folder, then:
+Frontend:
+cd Frontend
+npm run dev
+
+Do not run npm audit fix --force.

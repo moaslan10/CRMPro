@@ -1,0 +1,19 @@
+CRMPro CORS FIX
+
+1. Close old Backend terminals.
+2. Double-click START-BACKEND.bat.
+   It automatically stops an old process using port 5002.
+3. Wait for:
+   Now listening on: http://localhost:5002
+4. Open:
+   http://localhost:5002/
+   It should show JSON containing:
+   "status": "running"
+   "cors": "enabled"
+5. Keep Backend running.
+6. Run Frontend:
+   cd Frontend
+   npm run dev
+7. Open http://localhost:5173
+
+Do NOT run npm audit fix --force.
